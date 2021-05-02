@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="My application - PayPal"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:translationY="400dp">
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:enabled="false"
+            android:hint="Amount to pay"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="#AA1D4D"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="460dp">
+
+        <Button
+            android:id="@+id/buttonPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:enabled="false"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:onClick="itemClicked"
+        android:orientation="vertical"
+        android:translationY="180dp">
+
+        <CheckBox
+            android:id="@+id/checkboxItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="itemClicked"
+            android:text="    Item 1 - €1.10" />
+
+        <CheckBox
+            android:id="@+id/checkboxItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="itemClicked"
+            android:text="   Item 2 - €2" />
+
+        <CheckBox
+            android:id="@+id/checkboxItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="itemClicked"
+            android:text="   Item 3 - €3.50" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount to pay (euros): "
+        android:textColor="#220505"
+        android:textSize="18sp"
+        android:translationX="10dp"
+        android:translationY="370dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="329dp"
+            android:layout_height="59dp"
+            android:text="WELCOME TO MY APP "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#100F0F"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy one or more items"
+            android:textSize="24sp"
+            android:translationY="120dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>
